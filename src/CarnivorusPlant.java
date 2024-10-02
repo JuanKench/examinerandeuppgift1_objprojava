@@ -1,13 +1,16 @@
 class CarnivorusPlant extends Mathwater implements Waterble {
+    //inkapsling
     private String namn;
     private double height;
     private double watering;
+    // enums här
     private WaterType waterType;
 
     public CarnivorusPlant(String namn, double height){
         this.namn = namn;
         this.height = height;
         this.watering = calculateCarnivorusPlantwater(height);
+        // enums här
         this.waterType = WaterType.proteinWater;
     }
     public String getWaterNeeds(){
